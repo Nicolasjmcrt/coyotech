@@ -13,3 +13,10 @@ function additional_custom_styles() {
     wp_enqueue_style( 'uniquestylesheetid', get_template_directory_uri() . '/css/custom.css' ); 
 }
 add_action( 'wp_enqueue_scripts', 'additional_custom_styles' );
+
+
+function coyotech_remove_menu_pages() {
+	remove_menu_page( 'tools.php' );
+    remove_menu_page( 'edit-comments.php' );
+}
+add_action( 'admin_menu', 'coyotech_remove_menu_pages' );
