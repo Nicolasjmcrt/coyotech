@@ -10,8 +10,11 @@ add_theme_support( 'title-tag' );
 function additional_custom_styles() {
 
     /*Enqueue The Styles*/
-    wp_enqueue_style( 'uniquestylesheetid', get_template_directory_uri() . '/css/custom.css' ); 
+    wp_enqueue_style(
+        'uniquestylesheetid',
+        get_template_directory_uri() . '/css/custom.css' ); 
 }
+
 add_action( 'wp_enqueue_scripts', 'additional_custom_styles' );
 
 
