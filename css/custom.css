@@ -1,9 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+    --main-text-color: #7b829c;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--main-text-color);
+}
+
 .header {
-    display: flex;
-    justify-content: center;
-    background: #000;
+  display: flex;
+  justify-content: center;
+  background: #000;
 }
 
 .header > a > img {
-    height: 250px;
+  height: 250px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 80px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.post {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.post__meta {
+    font-size: 16px!important;
+    font-weight: 300;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.post__link {
+    color: var(--main-text-color);
+    text-decoration: underline red;
+}
+
+.wp-post-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2%;
 }
